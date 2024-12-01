@@ -1,3 +1,7 @@
+" Use a line cursor within insert mode and a block cursor everywhere else.
+let &t_SI = "\e[6 q"
+let &t_EI = "\e[2 q"
+
 set nocompatible
 syntax on
 set modelines=0
